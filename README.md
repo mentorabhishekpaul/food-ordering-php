@@ -40,12 +40,15 @@ $dbname     = "onlinefoodphp";
 5. **Run locally**
 Place the project in your server root (htdocs/ or www/) and open:
 http://localhost/<your-folder>/admin
-##🔐 Admin Login
+
+---
+## 🔐 Admin Login
 Admin credentials are stored in the admin table.
 Passwords should be stored using password_hash() (bcrypt).
 Authentication uses password_verify() for login.
 
-##⚠️ Security Notes
+---
+## ⚠️ Security Notes
 Current code uses raw SQL → vulnerable to SQL Injection.
 File upload validation is minimal (check size & MIME type before saving).
 Error messages are displayed — disable in production.
